@@ -60,7 +60,7 @@ export const resumes: Resume[] = [
     },
   },
   {
-    id: "1",
+    id: "2",
     companyName: "Google",
     jobTitle: "Frontend Developer",
     imagePath: "/images/resume_01.png",
@@ -168,11 +168,9 @@ export const AIResponseFormat = `
 export const prepareInstructions = ({
   jobTitle,
   jobDescription,
-  AIResponseFormat,
 }: {
   jobTitle: string;
   jobDescription: string;
-  AIResponseFormat: string;
 }) =>
   `You are an expert in ATS (Applicant Tracking System) and resume analysis.
   Please analyze and rate this resume and suggest how to improve it.

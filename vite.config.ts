@@ -9,6 +9,10 @@ export default defineConfig({
     dedupe: ['react', 'react-dom'],
   },
   optimizeDeps: {
-    include: ['react', 'react-dom', 'react-dropzone'],
+    include: ['react', 'react-dom', 'react-dropzone', 'pdfjs-dist'],
+    exclude: ['pdfjs-dist/build/pdf.worker.mjs'],
+  },
+  worker: {
+    format: 'es',
   },
 });
