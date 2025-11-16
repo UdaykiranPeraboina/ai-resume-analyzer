@@ -133,6 +133,7 @@ const Upload = () => {
             
             setStatusTest("Analysis complete! Redirecting...");
             console.log('Analysis complete:', data);
+            navigate(`/resume/${uuid}`);
             
             // Redirect to home or results page after 2 seconds
             setTimeout(() => {
